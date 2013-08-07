@@ -1,0 +1,131 @@
+\documentclass[10pt]{report}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\setlist[itemize]{leftmargin=0ex}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\begin{document}
+
+\textbf{{\Huge Andrew January}}
+
+Flat 2, 4 Lorne Street, Reading, Berkshire, RG1 7YN
+
+\begin {tabular}{ll}
+Email&andrewjanuary@gmail.com \\
+Tel&+44 7999 408105 \\
+Skype&aJanuary
+\end{tabular}
+
+\section*{Objective}
+I have several years experience working in a professional software development environment. During that time I have been pivotal in improving the automated tests, as well as automating some of the more error prone and laborious tasks in the development lifecycle.
+
+I am now looking to work at a company with a culture that values modern software development practices, such as test-driven development, so that I can focus on growing my skills as a developer and learning new technology alongside smart and motivated people.
+
+I would also like to work on a new technology stack such as one built on Ruby.
+
+\section*{Technical Skills}
+\setdescription{style=multiline,topsep=10pt,leftmargin=4.5cm,font=\normalfont}
+\begin{description}
+  \item[Programming Languages]
+    C\# (7 years), Java (4 years), Ruby, Javascript, SQL, Python, \mbox{Objective-C}, PHP, Delphi, Flex, TCL
+  \item[Technologies and Libraries]
+    jQuery, JSON, HTML, XML, Sinatra, Apache Server, Tomcat, Ivy, Spring, jUnit, Mockito
+  \item[Operating Systems]
+    Windows (7 years), OS X (6 years), Linux (Slackware and Ubuntu, 6 years)
+  \item[IDEs and Editors]
+    Vim, Eclipse, Visual Studio
+  \item[Source Control]
+    Git, Subversion, CVS
+\end{description}
+
+\section*{Experience}
+\setdescription{style=multiline,topsep=10pt,leftmargin=3cm,font=\normalfont}
+\begin{description}
+  \item[2012 -- Present]
+    \textbf{Evertz Microsystems Ltd.} \\
+    Software Developer
+
+    Evertz provides hardware and software to broadcasting companies worldwide to manage video media as well as scheduling and executing video playout.
+
+    In my current role I develop and maintain a Java based product called Mediator: an Apache Tomcat hosted application that exposes a Flex UI used by broadcast operators. It distributes the work among several servers as well as using an XY redundancy model to provide high availability.
+
+    I have been instrumental in several features and innovations:
+
+    \begin{itemize}
+      \item Wrote the implementation of the US government Emergency Alert System for the Public Broadcasting Service. A Java daemon receives national alerts and transforms them into a schedule of video events to show weather warnings and live Presidential broadcasts.
+      \item Helped develop a hub-and-spoke model of redundancy, designing and implementing an XML based synchronisation protocol with timeouts and robustness against connectivity issues.
+      \item Rewrote the Java and Delphi implementations of the in-house timecode mathematics library to increase precision and accuracy. I made careful consideration of backwards compatibility issues as it subtly changed the result of many previously incorrect calculations. I also refactored the test suite, drastically increasing coverage and removing many redundant tests.
+      \item Introduced the dependency management tool Ivy into the development workflow, removing the need to manually manage dependencies and artifacts. I also created training material on Ivy for other developers.
+      \item Implemented several extensions to the HTML/Javascript based configuration tool, including live previews of user-defined forms and the ability to resize and filter tables. This was done with a mix of Javascript, jQuery and modifications to the in-house annotation driven Java bean serializer/deserializer.
+      \item Added automated unit testing to the configuration tool using Jasmine and PhantomJS, as well as a wrapper to allow it to be driven from the ant build tool and Eclipse.
+    \end{itemize}
+
+  \pagebreak[2]
+  \item[2010 -- 2012]
+    \textbf{OpenBet Technologies Ltd.} \\
+    Software Developer
+
+    OpenBet supplies online casino games to operators worldwide.
+
+    I developed the Java server-side logic for games, running on top of an Apache Tomcat Servlet that exposed an XML API to be consumed by third part front-ends.
+
+    I regularly worked through a large part of the software lifecycle, from design to implementation to support.
+
+    \begin{itemize}
+      \item Successfully developed a large number of games that were deployed on several customer's websites.
+      \item Implemented two new game engines being used as the basis for games written by myself and other developers.
+      \item Introduced the use of automated testing tools such as Cucumber's executable specifications to improve regression testing, reduce bugs and help ensure the specifications were met correctly.
+      \item Wrote technical design documentation for dozens of games that were subsequently turned into successful implementations by myself and other developers.
+      \item Led a team of five people in the analysis and merging of two previously separate TCL web front-end codebases into a single, more maintainable product.
+      \item Mentored new colleagues and provided pivotal support to the technical lead during the formation of a new team.
+      \item Provided on-site developer support for a major customer website upgrade.
+      \item Worked directly with customers in the statistical analysis and subsequent debugging of games to ensure they met their specifications.
+    \end{itemize}
+
+  \pagebreak[2]
+  \item[2010 -- 2011]
+    \textbf{DiaCon (Harry Potter Conference)}
+    \begin{itemize}
+      \item Programmed the conference website using PHP, HTML and Javascript, including the registration and payment pages.
+      \item Wrote a responsive web-app for the conference schedule that allowed people to view and favourite programme items. I made use of HTML5's local storage APIs and manifest files to make it work seamlessly both offline and online.
+      \item Helped with the successful planning and running of the event.
+    \end{itemize}
+
+  \pagebreak[2]
+  \item[2010]
+    \textbf{Mew (Open Source Programming Language)} \\
+    http://code.google.com/p/mew-lang
+    \begin{itemize}
+      \item Designed and implemented new language features, test suites and formal specification.
+    \end{itemize}
+
+  \pagebreak[2]
+  \item[2009 -- 2010]
+    \textbf{Chair of Departmental Student Society, University of York}
+    \begin{itemize}
+      \item Organised and chaired weekly committee meetings.
+      \item Chaired the organisation and running of events.
+      \item Worked to reform the society structure, and therefore achieve ratification from the University of York Students' Union.
+    \end{itemize}
+\end{description}
+
+\section*{Education}
+\begin{description}
+  \item[2007--2010]
+    \textbf{BEng Hons Computer Science, University of York} \\
+    2:1. Dissertation on \textit{Adding Entry-Exit Coverage to Haskell Program Coverage}.
+
+  \item [2004 -- 2007]
+    \textbf{Orpington College, Bromley, Kent} \\
+    A Levels: Computing~---~A, Psychology~---~A, Mathematics~---~B, English Literature~---~C
+\end{description}
+
+\section*{Personal}
+I play board games and regularly attend a friend's board games night with my wife. I enjoy going to live stand-up gigs and listen to a number of comedy podcasts.
+
+\end{document}
